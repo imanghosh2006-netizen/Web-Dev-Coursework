@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    background-color: bisque;
+    color: red;
+    margin: auto;
+    border: 3px solid green;
+    text-align: center;
+    height: 5vh;
+    width: 80vw;
+    
+}
+
+.Lt {
+    background-color: blueviolet;
+    color: yellow;
+    margin: 12px;
+    border: 4px solid yellow;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+  
+.Lt h3 {
+    box-sizing: border-box;
+    background-color: red;
+    color: antiquewhite;
+    text-align: center;
+    width: 87.3vw;
+    margin: 4px;
+    border: 2px solid whitesmoke;
+    padding-right: 6px;
+}
+
+.Lt h4 {
+    box-sizing: border-box;
+    text-decoration: underline;
+    padding-left: 10px;
+
+}
+
+.foot {
+    box-sizing: border-box;
+    background-color: pink;
+    color: black;
+    text-align: right;
+    border: 3px solid blue;
+    margin: auto;
+    width: 90vw;
+    height: 4vh;
+}

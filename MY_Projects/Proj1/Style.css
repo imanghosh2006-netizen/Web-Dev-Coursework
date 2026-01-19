@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(186, 155, 109);
+}
+h1{
+    background-color: rgb(226, 25, 25);
+    color: rgb(114, 162, 204);
+}
+div.a1{
+    background-color: rgba(255, 0, 0, 0.385);
+    color: rgb(7, 7, 113);
+    font: 600;
+    font-size: larger;
+}
+div.a2{
+    background-color: rgb(73, 34, 110);
+    color: yellow;
+}
+div.a3{
+    background-color: rgb(23, 222, 53);
+    color: black;
+}
+div.a4{
+    background-color: rgb(135, 7, 7);
+    color: wheat;
+}
+button{
+    background-color: rgb(158, 121, 185);
+}
+
+

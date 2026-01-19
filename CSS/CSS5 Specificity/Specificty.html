@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        [data-x="a"]{     /*Here the thing works like an if statement where if value of data-x is a then only work is done but if it was put data-x only then it would work without any ifs*/
+            background-color : magenta;
+        }
+        /* The specificity for h1.cred= 1+10=11 Therefor its specificity is larg and hence its more preferable here
+        h1.cred{ 
+            color: brown;
+        } */
+        p{
+            color: blue !important;
+        }
+        p{
+            color: red;
+        }
+        /* Specificty of the following: 1+10+10+10+10=41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">Css Specificity</h1>  <!--The def of data-x attribute has been given in the documentation file-->
+        <p>This is for showing the usage of importance </p>
+    </div>
+</body>
+</html>

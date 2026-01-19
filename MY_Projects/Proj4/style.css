@@ -1,0 +1,45 @@
+:root{
+    --color: rgb(76, 200, 10);
+    --seccolor: rgb(42, 56, 34);
+    --tercolor: rgb(201, 162, 162);
+}
+
+.box{
+    background-color: var(--color);
+    color: var(--seccolor);
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    height: 43px;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width:600px){
+    .box{
+        flex-direction: column;
+        border: 2px solid brown;
+        border-radius: 7px;
+    }
+    .box1{
+        background-color: rosybrown;
+        border: 2px solid brown;
+        border-radius: 7px;
+    }
+    .box2{
+        background-color: lightblue;
+        border: 2px solid brown;
+        border-radius: 7px;
+    }
+    .box3{
+        background-color: lightgreen;
+        border: 2px solid brown;
+        border-radius: 7px;
+    }
+    .box4{
+        background-color: lightcoral;
+        border: 2px solid brown;
+        border-radius: 7px;
+    }
+}

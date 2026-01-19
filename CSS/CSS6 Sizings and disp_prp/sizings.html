@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;            
+        }
+        /* html{
+            font-size: 12px;
+        } */
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 245px; */
+            width: 80vw; /*This adjusts size of box to fit into the device window. vw-> viewport width*/
+            height: 10vh; /*Adjusts the height to 10 percent of the window*/
+            margin: auto; /*This adds margins to either side of the content and can help to centre the content.Note: Only Block Elements can be centred this way not Inline Elements*/
+            text-align: center;
+            font-size: 50px;
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 245px; */
+            width: 80vw;
+            /* height: 80vh;This fixes the height to 80 percent of the window */
+            min-height: 80vh; /*This makes sure that the height is at least 80 percent of the window but can grow if content exceeds that*/
+            margin: 23px auto;/*Here 23 is top bottom margin*/
+            background-color: aquamarine;
+        }
+        .container p{
+            /* font-size: 2em; This changes the font size of the inherited part to twice here */
+            /* font-size: 2rem;  This changes the font size fo the element to 2 times of the root element here the root element is html{} */
+            font-size: 2em;
+            width: 50%;/*This makes the paragraph take only 50 percent of the width of the container*/
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box; /*This makes sure that the border and padding are included in the width and height of the element*/
+            background-color: red;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* width: 100vmin; vmin is viewport minimum which takes the minimum of height and width of the viewport */
+            /* height: 10vmax; vmax is viewport maximum which takes the maximum of height and width of the viewport */
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque unde non necessitatibus, veniam nesciunt autem, recusandae itaque maiores iure, aut doloribus dolorem.
+        </p>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed facere, eius, dolores nulla iste asperiores exercitationem quibusdam, consequatur dicta vel doloremque corporis? Perferendis repudiandae voluptate blanditiis suscipit similique numquam nulla, esse nemo quos reiciendis ad ullam vitae id dicta officia voluptas dignissimos commodi illo laborum fugiat officiis doloribus! Velit enim deserunt sunt quo eum asperiores vitae inventore non quia debitis adipisci voluptas iusto, aliquam eius nemo numquam qui laboriosam nesciunt laborum ratione, ducimus mollitia repellendus eligendi est? Provident fugit earum odit officia reprehenderit a at, numquam aliquid, hic ipsam veritatis culpa esse quae inventore atque vel est. Tempore similique aliquid est nemo cupiditate excepturi odio iure repellat eum totam delectus aut rerum sapiente molestias, doloremque obcaecati reiciendis optio porro rem nulla.
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>
+
+
+<!-- Make sure to notice the parent child inheritance references to ensure smooth styling in css -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+
+        @media screen and (orientation: portrait){
+            body{
+                border: 2px solid purple;
+            }
+            
+        }
+
+        @media only screen and (max-width: 455px) /*Go to inspect tab and resize the window by selecting responsive dimension and watch the color change to yellowas dimension shrinks*/
+        /* @media only screen and (min-width: 455px) The color shall change to yellow when the width is more than 455px */
+        /* In place of screen we can also use all, print, speech*/ {
+            body{
+                background-color: yellow;
+            }
+        }
+
+        /* @media not | only mediatype and (expressions) {
+            Css-Code
+        } */
+
+        .boxes{
+            display: flex;  /*By default flex direction is row */
+            flex-wrap: wrap;/*To wrap the boxes to next line when there is no space in current line */
+            /* flex-direction: column; To arrange the boxes in column instead of row we can also use this instead of the previous method */
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: blue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Hey I am red body color!</div>
+    <div class="boxes">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>

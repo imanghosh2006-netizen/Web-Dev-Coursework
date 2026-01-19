@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 2px solid blue;
+    /* display: inline;  This converts the block element to inline */
+    display: inline-block;          /*This makes the element inline however keeping some block properties (refer mdn docs)*/
+    padding: 45px;
+    margin: 34px;
+}
+.box1{
+    /* display: none; Removes all the contents under this class and also the space occupied by the box */
+    /* visibility: hidden; Removes the box and the contents but keeps the space occupied by it */
+    /* display: inline-flex; This keeps all the flex item in one line */
+    /*The next two lines are used to centre content.*/
+    display: flex;  
+    justify-content: center;
+}
+

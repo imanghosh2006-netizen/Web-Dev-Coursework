@@ -1,0 +1,23 @@
+### Semantic Tags
+
+**The important ones:**
+
+<header> – Defines the top section of a page or section, usually containing titles, logos, or navigation.
+
+<nav> – Represents a navigation area that contains links to other sections or pages.
+
+<main> – Contains the main content of the webpage; only one <main> should be used per page.
+
+<section> – Groups related content into a logical section or topic of a webpage.
+
+<article> – Represents independent, self-contained content such as a blog post or news article.
+
+<aside> – Holds content indirectly related to the main content, like sidebars or additional notes.
+
+<footer> – Defines the bottom part of a page or section, usually including copyright or contact info.
+
+<figure> – Wraps visual media like images or charts along with their captions.
+
+<figcaption> – Provides a caption or description for the content inside a <figure>.
+
+<time> – Represents dates or times in a machine-readable format.

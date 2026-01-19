@@ -1,0 +1,15 @@
+/* PLease refer to the documentation for some important things */
+.box{
+    border: 2px solid black;
+    padding: 34px;
+    box-shadow: 5px 15px 5px #de1e1e; /*To put a shadow inside the box use box-shadow: inset 5px 15px 5px #de1e1e; */
+}
+.box1{
+    text-shadow: 7px 2px 2px #0f0c73;
+    padding: 17px;
+    margin: 22px;
+    outline: 2px solid blue;
+    border: 2px solid black;
+    border-radius: 22px;
+    outline-offset: 2px;
+}

@@ -1,0 +1,81 @@
+<!--
+Create a styled registration form for a hackathon event using HTML and CSS."
+Requirements:
+- Fields:
+- Full Name (text input)
+- Email (email input)
+- Phone Number(number)
+- Gender (gender radio type input)
+- Select your stream (dropdown: CSE, IT, ECE, ME, CE)
+- Checkbox: “I agree to the terms and conditions”
+- Submit button
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Update Server System</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="message.js" defer></script>
+    <!--defer is used to ensure that the alert appears only after the button has been pressed-->
+</head>
+
+<body>
+    <section>
+        <h1>Data Logging Form Submission</h1>
+    </section>
+    <section>
+        <form id="data-form" action="#" method="post">
+        <div class="a1">
+            <label for="username">Enter Your Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Full Name here." autofocus required>
+        </div>
+        <div class="a2">
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Address." required><br>
+            <label for="phn">Enter Your ID:</label>
+            <input type="text" id="phn" name="phn" placeholder="Enter your ID here." required>
+        </div>
+        <div class="a3">
+            Please Enter the level of importance for this log:
+            <input type="radio" id="imp-essential" name="imp" value="Essential" required>
+            <label for="imp-essential">Essential</label>
+            <input type="radio" id="imp-non" name="imp" value="Non Essential">
+            <label for="imp-non">Non Essential</label>
+        </div>
+        <div class="a4">
+            <select name="stream">
+                <option value="Choose your Stream please">Choose your Stream please</option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="CSE AIML">CSE AIML</option>
+                <option value="CSBS">CSBS</option>
+                <option value="ME">ME</option>
+                <option value="CSE IOT">CSE IOT</option>
+            </select>
+        </div>
+        <div class="a3">
+            <label for="action-description">Enter Description:</label><br>
+            <textarea id="action-description" name="action-description" rows="5" cols="50" required></textarea>
+        </div>
+        <div class="a4">
+            <input type="checkbox" id="subscribe" name="subscribe" value="Terms and Conditions" required>
+            <label for="subscribe">I Agree to the Terms and Conditions</label>
+        </div>
+        <section>
+            <button type="submit" id="alertButton">Submit This page</button>
+        </section>
+        </form>
+    </section>
+</body>
+
+</html>
+
+
+

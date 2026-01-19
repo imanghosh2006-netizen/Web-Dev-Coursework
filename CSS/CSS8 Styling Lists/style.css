@@ -1,0 +1,18 @@
+/* nav ul li{
+    /* list-style: devanagari; This defines the list  markers. */
+    /* list-style-type: "❤️"; Win + ; gives emojis */
+    /* background-color: yellow; */
+    /* list-style-position: inside; This brings the marker inside the whole list style */
+    /* border: 2px solid black; */
+    /* list-style-image: url(img.png); This makes the image as list markers 
+}*/
+
+/* for nav bars we can use flexbox to align the items in a row */
+nav ul {
+    background-color: lightgreen;
+    padding: 12px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}  

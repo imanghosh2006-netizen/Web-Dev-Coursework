@@ -1,0 +1,57 @@
+body {
+    background-color: aqua;
+}
+
+
+
+
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    background-color: aquamarine;
+    padding: 90px;
+    margin: 105px;
+    height: 20px;
+    width: 300px;
+    text-indent: 100px;
+    }
+
+h2{
+    text-transform: capitalize; /*Capitalizes every first letter of each word*/
+    text-transform: uppercase; /*Used to lower case each word */
+    text-decoration: underline;  /*We can also add the text decoration style after this.*/
+    text-decoration-style: double ;
+    text-decoration-thickness: 7px;
+    text-decoration-color: bisque;
+    text-align: center;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-style: oblique;
+    text-decoration: underline;
+    font-size: 20px;
+    line-height: 1.2; /*This adds a space of 1.2 between each line*/
+    letter-spacing: 3px; /*This adds spaces between each letter*/
+    color: red;
+}
+
+.box{
+    background-color: yellowgreen;
+    padding: 20px;
+    margin: 15px;
+    height: 150px;
+    width: 400px;
+    border: 5px solid blueviolet;
+}
+
+.box2{
+    background-color: beige;
+    border: 2px solid red;
+    width: 55px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: keep-all;
+}

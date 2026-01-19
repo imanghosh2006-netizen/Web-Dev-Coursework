@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{      /*Declaring CSS Variables. Root has global scope */
+            --color: rgb(66, 66, 175);
+            --seccolor: rgb(174, 174, 222);
+            --defpad: 23px;
+            --defop: 0.2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+            /* gap: 20px; */
+        }
+        ul li{
+            /* opacity: var(--defop); */
+            list-style: none;
+            /* padding: 34px; */
+            padding: var(--defpad); /* Using the variable */
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: rgb(255, 0, 247); /*This has local scope. Overriding the variable for first child only */
+            background-color: var(--color); /* Using the variable */
+            /* background-color: var(--color, blue); Fallback value in case variable is not defined */
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis fuga, facilis culpa sit laudantium reiciendis ducimus ipsa laborum totam dignissimos dicta voluptatum quidem non enim in, eius, placeat adipisci beatae suscipit. Aspernatur, cum voluptates consectetur, aliquam repudiandae, dicta impedit et dignissimos id quis voluptatum harum.</div>
+</body>
+</html>
+
+<!--Css Variables can not only hold colours but also values of different things-->

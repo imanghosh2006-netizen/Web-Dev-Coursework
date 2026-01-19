@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            margin: 2px;
+            width: 300px;
+            height: 80px;
+            border:2px solid black;
+            overflow: scroll; /*This property adds scrollbars when content overflows*/
+        }
+        .box1{
+            margin: 2px;
+            width: 300px;
+            height: 40px;
+            border:2px solid black;
+            overflow: hidden; /*This property hides any overflowing content*/
+            /* overflow-x: hidden; Hides horizontal overflow */
+            /* overflow-y: scroll; Adds vertical scrollbar */
+        }
+        .box2{
+            margin: 2px;
+            width: 300px;
+            height: 60px;
+            border:2px solid black;
+            overflow: auto; /*This property adds scrollbars only when necessary*/
+            white-space: nowrap; /*Prevents text from wrapping to the next line*/
+            /* text-overflow: ellipsis; Adds ellipsis (...) to indicate overflowed text */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia, beatae vel ad temporibus inventore molestiae culpa odio animi atque quam sunt corporis error est esse ipsam et. Consequuntur blanditiis hic saepe obcaecati corporis adipisci alias ipsum qui? Fugiat et amet a enim suscipit id quam. Autem quasi sit alias?
+    </div>
+    <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse odio quasi nemo accusamus temporibus voluptate doloribus, est reprehenderit ex cupiditate totam omnis.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quae qui ab nisi corrupti quisquam voluptates dignissimos suscipit! Atque asperiores saepe nemo libero sequi, nihil labore impedit error eius consectetur maxime assumenda laborum quis reiciendis temporibus ratione odio iusto omnis modi!
+    </div>
+</body>
+</html>
