@@ -8,10 +8,28 @@
     <style>
         .container {
             border: 2px solid red;
-            display: flex; /* Enables Flexbox layout */
+            display: flex;
+            /* Enables Flexbox layout */
             height: 80vh;
-            justify-content: center; /* Centers items horizontally. We can also put other values in here to position things. */
-            align-items: center; /* Centers items vertically */
+            justify-content: center;
+            /* Centers items horizontally. We can also put other values in here to position things. */
+            align-items: center;
+            /* Centers items vertically */
+            /*flex-direction: column; /* Changes the main axis to vertical ; column-reverse is given to inverse the item placement */
+            flex-wrap: wrap;
+            /* Allows items to wrap onto multiple lines when they exceed container width */
+            /*align-content: center; /* Centers the wrapped lines within the container */
+            align-content: flex-start;
+            /* Aligns wrapped lines to the start of the container */
+            flex-flow: row row-reverse;
+            /* Shorthand for flex-direction and flex-wrap */
+            /*gap: 20px; /* Adds space between items */
+            ;
+            /* row-gap: 5px; */
+            /* column-gap: 20px; */
+            gap: 10px 30px;
+            /* row-gap and column-gap combined */
+
         }
 
         .item {
@@ -21,23 +39,44 @@
             margin: 4px;
             background-color: blueviolet;
         }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .item1 {
+            flex-grow: 2;
+            flex-shrink: 2;
+            align-self: flex-end; /* Overrides the container's align-items property for this specific item */
+        }
+
+
+
     </style>
 </head>
 
 <body>
     <main>
         <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item">5</div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item item1">10</div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
