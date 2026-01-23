@@ -7,20 +7,34 @@
     <style>
         .container{
             width: 80vw;
+            height: 60vh;
             border: 2px solid black;
             display: grid;
             /* grid-template-columns: [first] 120px [second] 100px; */
             /* grid-template-rows: 100px 100px 100px; */
-            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /*grid-template-columns: repeat(4,1fr); /* repeat function to repeat columns */
+            /* grid-template-columns: repeat(4,minmax(100px,1fr)); minmax function to set minimum and maximum size of column */
+            grid-template-columns: repeat(4,80px);
+            grid-template-rows: repeat(2,80px);
+            align-content: center; /* Align the whole grid content vertically */
+            place-content: center; /* Align the whole grid content both vertically and horizontally */
+            /* gap: 34px; */
+            row-gap: 15px;
+            column-gap: 34px;
+            justify-items: center; /* Align items horizontally You can also give otheroptions to algn items in specific ways.*/   
+            align-items: center;   /* Align items vertically */
         }
         .items{
             border: 2px solid red;
             height: 55px;
-            /* width: 55px; */
+            width: 55px;
         }
         .item4{
             /* grid-row: 1/2; Start at row line 1 and end before row line 2 */
             /* grid-column: 1/2; Start at column line 1 and end before column line 2 */
+            /* align-self: start; */
+            /* justify-self: end; */
         }
         .item1{
             /* grid-row: 1/2; */
