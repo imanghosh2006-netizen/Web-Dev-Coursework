@@ -12,9 +12,9 @@ The goal of this repo is to track my growth from the basics of HTML/CSS to advan
 * *(More to be added as I progress!)*
 
 ## 📂 Folder Structure
-* `/Practical`: Coding exercises and mini-projects.
-* `/Theory`: Markdown notes and concept summaries.
-* `/Resources`: Useful links and cheat sheets.
+* `/CSS`: Cascading Style Sheets Tut.
+* `/HTML`: Basic Framework.
+* `/Project`: Useful exercises.
 
 ## 🚀 Recent Milestones
 - [x] Set up local development environment (VS Code).
