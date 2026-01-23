@@ -9,26 +9,36 @@
             border: 2px solid black;
             display: grid;
             grid-template-areas: "nav nav nav"
-                                 "side article article";
+                                 "side article article"
+                                 "footer footer footer";
         }
         .items{
             border: 2px solid red;
             height: 55px;
-            width: 55px;
-        }
-        .item4{
-           /* grid-area: nav; */
+            /* width: 55px; */
         }
         .item1{
             grid-area: nav;
+            background-color: lightblue;
+        }
+        .item2{
+            grid-area: side;
+            background-color: lightgreen;
+        }
+        .item3{
+            grid-area: article;
+            background-color: red;
+        }
+        .item4{
+            grid-area: footer;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="items item1">1</div>   <!-- This item shall overlap with item 4 -->
-        <div class="items">2</div>
-        <div class="items">3</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
         <div class="items item4">4</div>
         <div class="items">5</div>
     </div>
